@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css'/>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery-ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/javascripts/indexController.js"></script>
+    <style type="text/css">
+
+        body {
+            padding: 50px;
+            font-family: "Bookman", Georgia, "Times New Roman", serif;
+        }
+
+        H1 {
+            color: #c9c9c9;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        a {
+            color: #00B7FF;
+        }
+        #content {
+            border: 1px solid #dbdbdb;
+            box-shadow: 1px 1px 30px #D9CF48;
+            padding: 0em 1em;
+        }
+
+        .container {
+            padding: 1em;
+            color: #b2a93d;
+            font-size: large;
+            display: flex;
+            flex-flow: column;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <div class="container">
+            <H1><%= title %></H1>
+
+            <div class="alert alert-success alertClass">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <span class="alertMessage"></span>
+            </div>
+        </div>
+        <div id="content" class="container">
+            <div class="row actionAreaOuterDiv" id="actionArea">
+                <div class="col-md-12">
+                    <div class="col-md-4 padding10">
+                        <input type="button" value="Load" id="loadLayout"/>
+                    </div>
+                    <div class="col-md-8 padding10">
+                        <select id="selectLayout">
+                            <option value="Please Select Layout">Please Select Layout</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-4 padding10">
+                        <input type="button" value="Save" id="saveLayout"/>
+                    </div>
+                    <div class="col-md-8 padding10">
+                        <input type="text" id="layoutName" required pattern="[a-zA-Z_0-9]+" maxlength="50"
+                               placeholder="Enter Layout Name"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row operationArea">
+                <div class="col-md-4">
+                    <div class="col-md-12 padding10" id="palletArea">
+                        <div class="imgDiv padding10"><img src="/images/Chrysanthemum.jpg" alt="" class="palletImg"
+                                                           draggable="true" width="100%"
+                                                           height="150px"/></div>
+                        <div class="imgDiv padding10"><img src="/images/Tulips.jpg" alt="" class="palletImg"
+                                                           draggable="true" width="100%"
+                                                           height="150px"/></div>
+                        <div class="imgDiv padding10"><img src="/images/Koala.jpg" alt="" class="palletImg" width="100%"
+                                                           draggable="true" height="150px"/>
+                        </div>
+                        <div class="imgDiv padding10"><img src="/images/Penguins.jpg" alt="" class="palletImg"
+                                                           draggable="true" width="100%"
+                                                           height="150px"/></div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-12 padding10" id="layoutArea">
+                        <div class="padding10 layoutDiv">
+                            <div class="layoutCell flexStyle" width="100%" height="150px">
+                                <span class="glyphicon glyphicon-scissors horizontalScissor"
+                                      title="Hirizontal Split"></span>
+                                <span class="glyphicon glyphicon-scissors verticalScissor"
+                                      title="Verticle Split"></span>
+                            </div>
+                        </div>
+                        <div class="padding10 layoutDiv">
+                            <div class="layoutCell flexStyle" width="100%" height="150px">
+                                <span class="glyphicon glyphicon-scissors horizontalScissor"
+                                      title="Hirizontal Split"></span>
+                                <span class="glyphicon glyphicon-scissors verticalScissor"
+                                      title="Verticle Split"></span>
+                            </div>
+                        </div>
+                        <div class="padding10 layoutDiv">
+                            <div class="layoutCell flexStyle" width="100%" height="150px">
+                                <span class="glyphicon glyphicon-scissors horizontalScissor"
+                                      title="Hirizontal Split"></span>
+                                <span class="glyphicon glyphicon-scissors verticalScissor"
+                                      title="Verticle Split"></span>
+                            </div>
+                        </div>
+                        <div class="padding10 layoutDiv">
+                            <div class="layoutCell flexStyle" width="100%" height="150px">
+                                <span class="glyphicon glyphicon-scissors horizontalScissor"
+                                      title="Hirizontal Split"></span>
+                                <span class="glyphicon glyphicon-scissors verticalScissor"
+                                      title="Verticle Split"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

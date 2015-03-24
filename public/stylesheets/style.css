@@ -1,0 +1,109 @@
+
+
+.actionAreaOuterDiv {
+    padding: 1em 0em;
+}
+
+.operationArea {
+    background-color: #fdf7f0;
+    padding: 1em 0em;
+}
+
+#palletArea {
+    background-color: #fdefe6;
+}
+
+.palletImg {
+    background-color: #eeeeee;
+    border: 1px solid #dbdbdb;
+    z-index: 1;
+}
+
+#layoutArea {
+    background-color: #f3fdea;
+}
+
+.layoutCell {
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+    border: 1px solid #c6fdaa;
+    cursor: move;
+}
+
+.horizontalScissor {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: -5px;
+
+}
+
+.verticalScissor {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    height: 20px;
+}
+
+.horizontalScissor, .verticalScissor {
+    color: #e2e9bc;
+    cursor: pointer;
+}
+
+.horizontalScissor:hover, .verticalScissor:hover {
+    color: #b2a93d;
+}
+
+input, select {
+    border: 1px solid #dbdbdb;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+input[type="button"], select {
+    width: 100%;
+    height: 3em;
+    cursor: pointer;
+    color: #949494;
+}
+
+input[type="button"]:hover {
+    background-color: #ddda8d;
+    color: #ffffff;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 3em;
+    padding-left: 15px;
+}
+
+select {
+    background-color: #f2f2f2;
+    padding-left: 15px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.flexStyle {
+    display: flex;
+}
+
+.flexStyleCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    border-color: #ff7965;
+}
+
+.alertClass {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: 29em;
+    margin-top: -6em;
+}
